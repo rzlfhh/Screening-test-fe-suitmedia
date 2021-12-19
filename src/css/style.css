@@ -1,0 +1,527 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+header,
+footer,
+aside,
+nav,
+article,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+img {
+  display: block;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: 400;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 700;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active,
+a:focus {
+  outline: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2c2c2c;
+}
+
+.hide {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.container {
+  padding-inline: 1em;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+a {
+  color: #2c2c2c;
+}
+
+header {
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.375em;
+}
+
+header .logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+header .hamburger {
+  width: 1.625em;
+  cursor: pointer;
+}
+
+.navbar-mobile {
+  z-index: 99;
+  position: fixed;
+  top: 2.2em;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  height: 100vh;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.navbar-mobile ul li {
+  padding: 1em;
+}
+
+.navbar-mobile ul li a {
+  color: white;
+}
+
+.navbar-mobile ul li:hover {
+  background: rgba(46, 46, 46, 0.7);
+}
+
+.navbar-mobile .aboutsub {
+  background: rgba(46, 46, 46, 0.7);
+}
+
+.swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper .swiper-button-next {
+  margin-right: 1em;
+}
+
+.swiper .swiper-button-next :hover {
+  opacity: 0.5;
+}
+
+.swiper .swiper-button-prev {
+  margin-left: 1em;
+}
+
+.swiper .swiper-button-prev :hover {
+  opacity: 0.5;
+}
+
+.swiper .swiper-button-next::after,
+.swiper .swiper-button-prev::after {
+  content: "";
+}
+
+.swiper .swiper-pagination {
+  margin-bottom: 1em;
+}
+
+.swiper .swiper-pagination-bullet {
+  width: 1em;
+  height: 1em;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background-color: white !important;
+  width: 1em;
+  height: 1em;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.swiper-slide h1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  max-width: 60%;
+  margin: auto;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.625em;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.values {
+  text-align: center;
+  margin-top: 7em;
+}
+
+.values h2 {
+  margin-bottom: 1em;
+}
+
+.values .cards-value-container .card-value {
+  color: white;
+  padding: 2em 1em;
+  margin-bottom: 1em;
+}
+
+.values .cards-value-container .card-value img {
+  width: 1.5em;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.values .cards-value-container .card-value h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.values .cards-value-container .card-value p {
+  margin-bottom: 1em;
+}
+
+.values .cards-value-container .card-red {
+  background-color: #ea7c6f;
+  border: 2px solid #e45c4e;
+}
+
+.values .cards-value-container .card-green {
+  background-color: #6a996f;
+  border: 2px solid #527a57;
+}
+
+.values .cards-value-container .card-blue {
+  background-color: #5696c2;
+  border: 2px solid #407eaa;
+}
+
+form {
+  width: 100%;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  margin-top: 7em;
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+form .form-control.success input {
+  border: 1.5px solid #38cc8c;
+}
+
+form .form-control.error input {
+  border: 1.5px solid #ec3434;
+}
+
+form .form-control.success textarea {
+  border: 1.5px solid #38cc8c;
+}
+
+form .form-control.error textarea {
+  border: 1.5px solid #ec3434;
+}
+
+form .form-control small {
+  visibility: hidden;
+}
+
+form .form-control.error small {
+  visibility: visible;
+  color: #ec3434;
+}
+
+form .form-control input:focus {
+  outline: none !important;
+  border-color: #5696c2;
+}
+
+form .form-control textarea:focus {
+  outline: none !important;
+  border-color: #5696c2;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.625em;
+  font-family: "Roboto", sans-serif;
+  border: 2px solid #d3d3d3;
+}
+
+form small {
+  visibility: hidden;
+}
+
+form button {
+  width: 100%;
+  background: #5696c2;
+  padding: 1em;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  margin-top: 0.2em;
+}
+
+form button:hover {
+  background: #407eaa;
+}
+
+footer {
+  background-color: #333333;
+  margin-top: 4em;
+  text-align: center;
+  color: white;
+  padding: 2em 0;
+}
+
+footer ul {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+footer ul li a img {
+  width: 2em;
+}
+
+@media (min-width: 768px) {
+  .hide {
+    display: block;
+  }
+  .hamburger {
+    display: none;
+  }
+  .container {
+    padding-inline: 4em;
+  }
+  .navbar-mobile {
+    display: none;
+  }
+  header {
+    height: 3.375em;
+    /* Nested Dropdown Show */
+  }
+  header .logo {
+    display: grid;
+    height: 100%;
+    align-content: center;
+  }
+  header nav {
+    z-index: 9999;
+    font-size: 1rem;
+  }
+  header #navbar ul li {
+    color: #333333;
+    display: inline-block;
+    padding: 0.8em;
+    position: relative;
+    text-transform: uppercase;
+  }
+  header #navbar ul li a {
+    color: #333333;
+    text-decoration: none;
+  }
+  header #navbar ul li ul {
+    display: none;
+  }
+  header #navbar ul li:hover {
+    cursor: pointer;
+    background: #f4f4f4;
+    color: #333333;
+  }
+  header #navbar ul li:hover a {
+    color: #333333;
+  }
+  header #navbar ul li:hover ul {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 200px;
+    margin-top: 0.8em;
+  }
+  header #navbar ul li:hover ul li {
+    display: block;
+    background: white;
+  }
+  header #navbar ul li:hover ul li a {
+    color: #333333;
+  }
+  header #navbar ul li:hover ul li:hover {
+    background: #2c2c2c;
+  }
+  header #navbar ul li:hover ul li:hover a {
+    color: white;
+  }
+  .values .cards-value-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  .values .cards-value-container .card-value {
+    max-width: 31.25em;
+    margin: 0 auto;
+  }
+  form {
+    max-width: 31.25em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-inline: 6em;
+  }
+  .swiper-slide h1 {
+    font-size: 2rem;
+    bottom: 20%;
+    left: -18%;
+    text-align: left;
+    max-width: 50%;
+  }
+  .values .cards-value-container {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 20.3125em);
+  }
+  .values .cards-value-container .card-value {
+    height: 15.625em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .values .cards-value-container .card-red {
+    background-color: #ea7c6f;
+    position: relative;
+  }
+  .values .cards-value-container .card-red:before {
+    content: "\A";
+    border-style: solid;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent #ea7c6f;
+    position: absolute;
+    right: -15px;
+  }
+  .values .cards-value-container .card-green {
+    background-color: #6a996f;
+    position: relative;
+  }
+  .values .cards-value-container .card-green:before {
+    content: "\A";
+    border-style: solid;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent #6a996f;
+    position: absolute;
+    right: -15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
